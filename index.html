@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rubi.shops | Ropa Elegante para Dama</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo" data-page="home">
+                <span class="logo-rubi">Rubi</span><span class="logo-shops">.shops</span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#" data-page="home" class="nav-link active">Home</a></li>
+                <li><a href="#" data-page="shop" class="nav-link">Shop</a></li>
+                <li><a href="#" data-page="collections" class="nav-link">Colecciones</a></li>
+                <li><a href="#" data-page="contact" class="nav-link">Contacto</a></li>
+            </ul>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <!-- HOME PAGE -->
+        <section class="page page-home active" id="page-home">
+            <div class="hero">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <p class="hero-subtitle">Nueva Colección 2026</p>
+                    <h1 class="hero-title">ELEGANCIA<br><span class="hero-accent">EN CADA DETALLE</span></h1>
+                    <p class="hero-description">Vestidos exclusivos, accesorios premium y estilo sin igual</p>
+                    <a href="#" class="hero-btn" data-page="shop">Explorar Colección</a>
+                </div>
+                <div class="hero-scroll-indicator">
+                    <span>↓</span>
+                </div>
+            </div>
+
+            <section class="featured-section">
+                <div class="section-header">
+                    <h2 class="section-title">PRODUCTOS DESTACADOS</h2>
+                    <p class="section-subtitle">Lo más trending de la temporada</p>
+                </div>
+                <div class="products-grid" id="featuredGrid">
+                    <!-- Products loaded via JS -->
+                </div>
+                <div class="section-cta">
+                    <a href="#" class="btn-primary" data-page="shop">Ver Todo el Catálogo</a>
+                </div>
+            </section>
+
+            <section class="categories-section">
+                <div class="section-header">
+                    <h2 class="section-title">CATEGORÍAS</h2>
+                </div>
+                <div class="categories-grid">
+                    <div class="category-card" data-category="vestidos">
+                        <div class="category-image" style="background: linear-gradient(135deg, #ff1493 0%, #ff69b4 100%);">
+                            <span class="category-icon">👗</span>
+                        </div>
+                        <h3 class="category-title">Vestidos</h3>
+                    </div>
+                    <div class="category-card" data-category="accesorios">
+                        <div class="category-image" style="background: linear-gradient(135deg, #dc143c 0%, #ff6347 100%);">
+                            <span class="category-icon">💎</span>
+                        </div>
+                        <h3 class="category-title">Accesorios</h3>
+                    </div>
+                    <div class="category-card" data-category="ninas">
+                        <div class="category-image" style="background: linear-gradient(135deg, #00bfa5 0%, #1de9b6 100%);">
+                            <span class="category-icon">👧</span>
+                        </div>
+                        <h3 class="category-title">Niñas</h3>
+                    </div>
+                </div>
+            </section>
+
+            <section class="banner-section">
+                <div class="banner-content">
+                    <h2 class="banner-title">ENVÍOS A TODO EL PAÍS</h2>
+                    <p class="banner-text">Compra segura y recibe tu pedido en la puerta de tu casa</p>
+                </div>
+            </section>
+        </section>
+
+        <!-- SHOP PAGE -->
+        <section class="page page-shop" id="page-shop">
+            <div class="shop-header">
+                <h1 class="shop-title">NUESTRO CATÁLOGO</h1>
+                <p class="shop-subtitle">Encuentra tu look perfecto</p>
+            </div>
+            
+            <div class="shop-filters">
+                <button class="filter-btn active" data-filter="all">Todo</button>
+                <button class="filter-btn" data-filter="vestidos">Vestidos</button>
+                <button class="filter-btn" data-filter="accesorios">Accesorios</button>
+                <button class="filter-btn" data-filter="ninas">Niñas</button>
+            </div>
+
+            <div class="products-grid" id="shopGrid">
+                <!-- Products loaded via JS -->
+            </div>
+        </section>
+
+        <!-- COLLECTIONS PAGE -->
+        <section class="page page-collections" id="page-collections">
+            <div class="collections-header">
+                <h1 class="collections-title">COLECCIONES</h1>
+                <p class="collections-subtitle">Diseños exclusivos para cada ocasión</p>
+            </div>
+
+            <div class="collections-grid">
+                <div class="collection-card">
+                    <div class="collection-image" style="background: linear-gradient(45deg, #1a1a1a 0%, #333 100%);"></div>
+                    <div class="collection-info">
+                        <h3>Colección Noche</h3>
+                        <p>Vestidos sofisticados para eventos especiales</p>
+                    </div>
+                </div>
+                <div class="collection-card">
+                    <div class="collection-image" style="background: linear-gradient(45deg, #ff1493 0%, #ff69b4 100%);"></div>
+                    <div class="collection-info">
+                        <h3>Colección Fiesta</h3>
+                        <p>Looks vibrantes para celebrar</p>
+                    </div>
+                </div>
+                <div class="collection-card">
+                    <div class="collection-image" style="background: linear-gradient(45deg, #00bfa5 0%, #1de9b6 100%);"></div>
+                    <div class="collection-info">
+                        <h3>Colección Casual</h3>
+                        <p>Estilo diario con elegancia</p>
+                    </div>
+                </div>
+                <div class="collection-card">
+                    <div class="collection-image" style="background: linear-gradient(45deg, #dc143c 0%, #ff6347 100%);"></div>
+                    <div class="collection-info">
+                        <h3>Colección Premium</h3>
+                        <p>Las piezas más exclusivas</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRODUCT PAGE -->
+        <section class="page page-product" id="page-product">
+            <div class="product-detail" id="productDetail">
+                <!-- Product detail loaded via JS -->
+            </div>
+        </section>
+
+        <!-- CONTACT PAGE -->
+        <section class="page page-contact" id="page-contact">
+            <div class="contact-container">
+                <h1 class="contact-title">CONTACTO</h1>
+                <p class="contact-subtitle">Estamos aquí para ayudarte</p>
+
+                <div class="contact-cards">
+                    <div class="contact-card">
+                        <div class="contact-icon">💬</div>
+                        <h3>WhatsApp</h3>
+                        <p>Escríbenos para pedidos instantáneos</p>
+                        <a href="https://wa.me/1234567890" target="_blank" class="contact-link">Enviar mensaje</a>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">📱</div>
+                        <h3>Instagram</h3>
+                        <p>Síguenos en @rubi.shops</p>
+                        <a href="https://instagram.com/rubi.shops" target="_blank" class="contact-link">Ver perfil</a>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">📧</div>
+                        <h3>Email</h3>
+                        <p>Consultas y pedidos</p>
+                        <a href="mailto:contacto@rubi.shops" class="contact-link">contacto@rubi.shops</a>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <h3 class="form-title">Envíanos un mensaje</h3>
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Tu email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Tu mensaje" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="#" class="logo" data-page="home">
+                    <span class="logo-rubi">Rubi</span><span class="logo-shops">.shops</span>
+                </a>
+                <p class="footer-tagline">Elegancia y estilo en cada detalle</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Shop</h4>
+                    <a href="#" data-page="shop">Vestidos</a>
+                    <a href="#" data-page="shop">Accesorios</a>
+                    <a href="#" data-page="shop">Niñas</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Información</h4>
+                    <a href="#" data-page="contact">Contacto</a>
+                    <a href="#">Envíos</a>
+                    <a href="#">Cambios</a>
+                </div>
+            </div>
+            <div class="footer-social">
+                <a href="https://instagram.com/rubi.shops" target="_blank" class="social-link">📷</a>
+                <a href="https://wa.me/1234567890" target="_blank" class="social-link">💬</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Rubi.shops. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Tu Carrito</h3>
+            <button class="cart-close" id="cartClose">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <p class="cart-empty">Tu carrito está vacío</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotal">$0</span>
+            </div>
+            <button class="btn-checkout">Finalizar Compra</button>
+        </div>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-menu-close" id="mobileMenuClose">&times;</button>
+        <ul class="mobile-nav-menu">
+            <li><a href="#" data-page="home">Home</a></li>
+            <li><a href="#" data-page="shop">Shop</a></li>
+            <li><a href="#" data-page="collections">Colecciones</a></li>
+            <li><a href="#" data-page="contact">Contacto</a></li>
+        </ul>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
