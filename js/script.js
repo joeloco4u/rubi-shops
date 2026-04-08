@@ -283,7 +283,7 @@ function openProductDetail(productId) {
     ).join('');
     
     const categoryLabel = selectedProduct.category === 'vestidos-mujer' ? 'Vestidos Mujer' : 'Vestidos Niña';
-    const whatsappLink = `https://wa.me/1234567890?text=${encodeURIComponent(`Hola, me interesa el producto: ${selectedProduct.name} - $${selectedProduct.price}`)}`;
+    const whatsappLink = `https://wa.me/584246295209?text=${encodeURIComponent(`Hola, me interesa el producto: ${selectedProduct.name} - $${selectedProduct.price}`)}`;
     
     productDetail.innerHTML = `
         <div class="product-detail-image">
