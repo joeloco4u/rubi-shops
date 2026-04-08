@@ -9,7 +9,7 @@ const products = [
     {
         id: 1,
         name: "Vestido Elegante Noir",
-        category: "vestidos",
+        category: "vestidos-mujer",
         price: 249.99,
         description: "Vestido de cocktail en tela satinada con corte ajustado. Perfecto para eventos formales y cenas elegantes. Cuello V pronunciado con espalda descubierta.",
         sizes: ["XS", "S", "M", "L"],
@@ -19,7 +19,7 @@ const products = [
     {
         id: 2,
         name: "Vestido Fiesta Rosa",
-        category: "vestidos",
+        category: "vestidos-mujer",
         price: 189.99,
         description: "Vestido festivo en tonalidades vibrantes. Escote en V con cintura ceñida y falda voluminosa. Ideal para celebraciones y ocasiones especiales.",
         sizes: ["XS", "S", "M", "L", "XL"],
@@ -28,18 +28,8 @@ const products = [
     },
     {
         id: 3,
-        name: "Set de Joyería Diamond",
-        category: "accesorios",
-        price: 89.99,
-        description: "Set completo de joyería con piedras preciosas. Incluye aretes, collar y pulsera. Acabado en oro rosa de 18k. Pieza exclusiva.",
-        sizes: ["Único"],
-        badge: null,
-        emoji: "💎"
-    },
-    {
-        id: 4,
         name: "Vestido Casual Verde",
-        category: "vestidos",
+        category: "vestidos-mujer",
         price: 159.99,
         description: "Vestido casual de diario en color esmeralda. Tela transpirable con corte fluido. Perfecto para el día a día con estilo.",
         sizes: ["XS", "S", "M", "L"],
@@ -47,29 +37,9 @@ const products = [
         emoji: "👗"
     },
     {
-        id: 5,
-        name: "Bolso Elegante Red",
-        category: "accesorios",
-        price: 129.99,
-        description: "Bolso de mano en皮革 premium. Compartimento principal con cierre. Correa desmontable para llevar como clutch o bandolera.",
-        sizes: ["Único"],
-        badge: "Oferta",
-        emoji: "👜"
-    },
-    {
-        id: 6,
-        name: "Vestido Niña Princess",
-        category: "ninas",
-        price: 79.99,
-        description: "Vestido infantil con volantes y colores pastel. Tela suave y cómoda para niñas. Perfecto para fiestas y eventos familiares.",
-        sizes: ["2-4", "4-6", "6-8", "8-10"],
-        badge: null,
-        emoji: "👧"
-    },
-    {
-        id: 7,
+        id: 4,
         name: "Vestido Rojo Passion",
-        category: "vestidos",
+        category: "vestidos-mujer",
         price: 299.99,
         description: "Vestido de noche en rojo intenso. Gasa con aplicaciones de encaje. Largo hasta el suelo con cola sutil. Para ocasiones memorables.",
         sizes: ["XS", "S", "M", "L"],
@@ -77,29 +47,9 @@ const products = [
         emoji: "👗"
     },
     {
-        id: 8,
-        name: "Gafas de Sol Vintage",
-        category: "accesorios",
-        price: 59.99,
-        description: "Gafas de sol estilo retro con montura Oversize. Lentes UV400 con protección solar completa. Marco en acetato premium.",
-        sizes: ["Único"],
-        badge: null,
-        emoji: "🕶️"
-    },
-    {
-        id: 9,
-        name: "Conjunto Niña Flower",
-        category: "ninas",
-        price: 69.99,
-        description: "Conjunto infantil con floral print. Includes falda y top. Telas suaves sin irritaciones. Ideal para primavera y verano.",
-        sizes: ["2-4", "4-6", "6-8", "8-10"],
-        badge: null,
-        emoji: "👧"
-    },
-    {
-        id: 10,
+        id: 5,
         name: "Vestido Blanco Pure",
-        category: "vestidos",
+        category: "vestidos-mujer",
         price: 219.99,
         description: "Vestido blanco minimalista en algodón orgánico. Corte recto con detalles enrollados. Versatilidad para cualquier ocasión.",
         sizes: ["XS", "S", "M", "L", "XL"],
@@ -107,23 +57,73 @@ const products = [
         emoji: "👗"
     },
     {
-        id: 11,
-        name: "Cinturón Statement",
-        category: "accesorios",
-        price: 45.99,
-        description: "Cinturón ancho de cuero con hebilla dorada. Accessorio que transforma cualquier look. Ajuste personalizable.",
-        sizes: ["S", "M", "L"],
+        id: 6,
+        name: "Vestido Noche Negro",
+        category: "vestidos-mujer",
+        price: 349.99,
+        description: "Vestido de gala en negro absoluto. Encaje francés con transparencias. Talla大了. Perfecto para cenas de gala y eventos formales.",
+        sizes: ["XS", "S", "M", "L"],
+        badge: "Exclusive",
+        emoji: "👗"
+    },
+    {
+        id: 7,
+        name: "Vestido Azul Cielo",
+        category: "vestidos-mujer",
+        price: 179.99,
+        description: "Vestido fresco en azul pastel. Tela vaporosa ideal para bodas y eventos diurnos. Fluidez y elegancia en cada movimiento.",
+        sizes: ["XS", "S", "M", "L", "XL"],
         badge: null,
-        emoji: "👔"
+        emoji: "👗"
+    },
+    {
+        id: 8,
+        name: "Conjunto Niña Princess",
+        category: "vestidos-nina",
+        price: 89.99,
+        description: "Conjunto infantil con falda y top coordinados. Tela suave y cómoda para niñas. Perfecto para fiestas y eventos familiares.",
+        sizes: ["2-4", "4-6", "6-8", "8-10"],
+        badge: "Nuevo",
+        emoji: "👧"
+    },
+    {
+        id: 9,
+        name: "Vestido Niña Flower",
+        category: "vestidos-nina",
+        price: 69.99,
+        description: "Vestido infantil con floral print. Volantes delicados y colores pastel. Telas suaves sin irritaciones. Ideal para primavera y verano.",
+        sizes: ["2-4", "4-6", "6-8", "8-10"],
+        badge: null,
+        emoji: "👧"
+    },
+    {
+        id: 10,
+        name: "Vestido Niña Party",
+        category: "vestidos-nina",
+        price: 79.99,
+        description: "Vestido de fiesta infantil con purpurina. Brilla bajo la luz. Tela suave con forro cómodo. La favorita de las pequeñas.",
+        sizes: ["2-4", "4-6", "6-8", "8-10"],
+        badge: null,
+        emoji: "👧"
+    },
+    {
+        id: 11,
+        name: "Conjunto Niña Summer",
+        category: "vestidos-nina",
+        price: 59.99,
+        description: "Conjunto verano con short y top. Tela ligera y transpirable. Ideal para días calurosos. Estilo y comodidad para las niñas.",
+        sizes: ["2-4", "4-6", "6-8", "8-10"],
+        badge: "Oferta",
+        emoji: "👧"
     },
     {
         id: 12,
-        name: "Vestido Niña Party",
-        category: "ninas",
-        price: 89.99,
-        description: "Vestido de fiesta infantil con purpurina. Brilla bajo la luz. Tela suave con forro cómodo. La favorita de las pequeñas.",
+        name: "Vestido Niña Cute",
+        category: "vestidos-nina",
+        price: 74.99,
+        description: "Vestido adorable con lacitos y colores suaves. Perfecto para fotografías y eventos especiales. Cómodo para jugar y brillar.",
         sizes: ["2-4", "4-6", "6-8", "8-10"],
-        badge: "Nuevo",
+        badge: null,
         emoji: "👧"
     }
 ];
@@ -282,6 +282,7 @@ function openProductDetail(productId) {
         `<span class="product-detail-size" data-size="${size}">${size}</span>`
     ).join('');
     
+    const categoryLabel = selectedProduct.category === 'vestidos-mujer' ? 'Vestidos Mujer' : 'Vestidos Niña';
     const whatsappLink = `https://wa.me/1234567890?text=${encodeURIComponent(`Hola, me interesa el producto: ${selectedProduct.name} - $${selectedProduct.price}`)}`;
     
     productDetail.innerHTML = `
@@ -289,7 +290,7 @@ function openProductDetail(productId) {
             <div class="product-detail-emoji">${selectedProduct.emoji}</div>
         </div>
         <div class="product-detail-info">
-            <p class="product-detail-category">${selectedProduct.category}</p>
+            <p class="product-detail-category">${categoryLabel}</p>
             <h1 class="product-detail-name">${selectedProduct.name}</h1>
             <p class="product-detail-price">$${selectedProduct.price.toFixed(2)}</p>
             <p class="product-detail-description">${selectedProduct.description}</p>
