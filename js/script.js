@@ -477,6 +477,29 @@ function init() {
     
     const homeLink = document.querySelector('.nav-link[data-page="home"]');
     if (homeLink) homeLink.classList.add('active');
+    
+    initScrollAnimations();
+}
+
+function initScrollAnimations() {
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.2
+    };
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, observerOptions);
+    
+    const promoBanner = document.querySelector('.promo-banner');
+    if (promoBanner) {
+        observer.observe(promoBanner);
+    }
 }
 
 init();
