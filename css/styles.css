@@ -1312,3 +1312,24 @@ button {
         font-size: 28px;
     }
 }
+
+/* Ajuste para las imágenes del catálogoFOTOS DESDE AQUI */
+.product-img-render {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Esto hace que la foto llene el espacio sin estirarse */
+    display: block;
+}
+
+/* Ajuste para la imagen en la página de producto  FOTOS DESDE AQUI*/
+.product-img-detail {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    object-fit: contain; /* Aquí usamos contain para que se vea la prenda completa */
+}
+
+/* Opcional: Quitar el fondo gris de los placeholders anteriores */
+.product-image, .product-detail-image {
+    background: var(--color-dark);
+}

@@ -1,130 +1,127 @@
 // =====================================================
-// RUBI.SHOPS - JavaScript
+// RUBI.SHOPS - JavaScript (Versión Corregida con Imágenes)
 // =====================================================
 
 // =====================================================
 // PRODUCT DATA
 // =====================================================
 const products = [
-    {
-        id: 1,
-        name: "Vestido Elegante Noir",
+     {
+    id: 1,
+        name: "Vestido Beige",
         category: "vestidos-mujer",
-        price: 249.99,
-        description: "Vestido de cocktail en tela satinada con corte ajustado. Perfecto para eventos formales y cenas elegantes. Cuello V pronunciado con espalda descubierta.",
-        sizes: ["XS", "S", "M", "L"],
-        badge: "Nuevo",
-        emoji: "👗"
-    },
+        price: 30.00,
+        // Enrutamiento para el ID 1
+        image: "assets/vestidos 30$/vestido-beige.jpeg", 
+        description: "Hermoso vestido beige con diseño elegante. Tela suave y cómoda, ideal para ocasiones especiales. Corte ajustado que realza la figura. Disponible en varias tallas.",
+        sizes: ["S", "M", "L"],
+        badge: "Nuevo"
+     },
+       
     {
-        id: 2,
-        name: "Vestido Fiesta Rosa",
+       id: 2,
+        name: "Vestido Brillante Negro",
         category: "vestidos-mujer",
-        price: 189.99,
-        description: "Vestido festivo en tonalidades vibrantes. Escote en V con cintura ceñida y falda voluminosa. Ideal para celebraciones y ocasiones especiales.",
-        sizes: ["XS", "S", "M", "L", "XL"],
-        badge: "Best Seller",
-        emoji: "👗"
+        price: 30.00,
+        // Enrutamiento para el ID 2
+        image: "assets/vestidos 30$/vestido-brillonegro.jpeg", 
+        description: "Vestido brillante en negro con diseño elegante. Tela de alta calidad y corte ajustado. Ideal para ocasiones especiales.",
+        sizes: ["S"],
+        badge: "Nuevo"
     },
     {
         id: 3,
-        name: "Vestido Casual Verde",
+        name: "Vestido Brillante Rosa",
         category: "vestidos-mujer",
-        price: 159.99,
-        description: "Vestido casual de diario en color esmeralda. Tela transpirable con corte fluido. Perfecto para el día a día con estilo.",
-        sizes: ["XS", "S", "M", "L"],
-        badge: null,
-        emoji: "👗"
+        price: 30.00,
+        // Enrutamiento para el ID 3
+        image: "assets/vestidos 30$/vestido-brillowhiterose.jpeg", 
+        description: "Vestido brillante en rosa con diseño elegante. Tela de alta calidad y corte ajustado. Ideal para ocasiones especiales.",
+        sizes: [ "XS"],
+        badge: "Oferta Especial"
     },
     {
-        id: 4,
-        name: "Vestido Rojo Passion",
+       id: 4,
+        name: "Vestido Negro Casual",
         category: "vestidos-mujer",
-        price: 299.99,
-        description: "Vestido de noche en rojo intenso. Gasa con aplicaciones de encaje. Largo hasta el suelo con cola sutil. Para ocasiones memorables.",
-        sizes: ["XS", "S", "M", "L"],
-        badge: "Premium",
-        emoji: "👗"
+        price: 30.00,
+         // Enrutamiento para el ID 4
+        image: "assets/vestidos 30$/Vestido-negrocasual.jpeg", 
+        description: "Vestido negro casual con diseño elegante. Tela de alta calidad y corte ajustado. Ideal para ocasiones especiales.",
+        sizes: ["XS"],
+        
     },
     {
-        id: 5,
-        name: "Vestido Blanco Pure",
+    id: 5,
+        name: "Vestido Negro Elegante",
         category: "vestidos-mujer",
-        price: 219.99,
-        description: "Vestido blanco minimalista en algodón orgánico. Corte recto con detalles enrollados. Versatilidad para cualquier ocasión.",
-        sizes: ["XS", "S", "M", "L", "XL"],
-        badge: null,
-        emoji: "👗"
+        price: 30.00,
+         // Enrutamiento para el ID 5
+        image: "assets/vestidos 30$/Vestido-negroelegante.jpeg", 
+        description: "Vestido negro elegante con diseño sofisticado. Tela de alta calidad y corte ajustado. Ideal para ocasiones especiales.",
+        sizes: ["XS", "S", "M", "L"],
+    
+       
     },
     {
         id: 6,
-        name: "Vestido Noche Negro",
+        name: "Vestido Plateado Elegante",
         category: "vestidos-mujer",
-        price: 349.99,
-        description: "Vestido de gala en negro absoluto. Encaje francés con transparencias. Talla大了. Perfecto para cenas de gala y eventos formales.",
-        sizes: ["XS", "S", "M", "L"],
-        badge: "Exclusive",
-        emoji: "👗"
+        price: 30,
+        description: "Vestido plateado elegante con diseño brillante. Tela de alta calidad y corte ajustado. Ideal para ocasiones especiales.",
+        sizes: ["S"],
+        badge: "Exclusivo",
+        image: "assets/vestidos 30$/vestido-plateadoelegante.jpeg"
     },
     {
         id: 7,
-        name: "Vestido Azul Cielo",
+        name: "Vestido Rojo Corto",
         category: "vestidos-mujer",
-        price: 179.99,
-        description: "Vestido fresco en azul pastel. Tela vaporosa ideal para bodas y eventos diurnos. Fluidez y elegancia en cada movimiento.",
-        sizes: ["XS", "S", "M", "L", "XL"],
-        badge: null,
-        emoji: "👗"
+        price: 30,
+        description: "Vestido rojo corto con diseño elegante. Tela de alta calidad y corte ajustado. Ideal para ocasiones especiales.",
+        sizes: ["S"],
+        badge: "",
+        image: "assets/vestidos 30$/vestido-rojo.jpeg"
     },
     {
         id: 8,
         name: "Conjunto Niña Princess",
         category: "vestidos-nina",
-        price: 89.99,
+        price: 20.00,
         description: "Conjunto infantil con falda y top coordinados. Tela suave y cómoda para niñas. Perfecto para fiestas y eventos familiares.",
         sizes: ["2-4", "4-6", "6-8", "8-10"],
         badge: "Nuevo",
-        emoji: "👧"
+        image: "assets/vestidos niña/vestido-niña1.jpg"
     },
     {
         id: 9,
-        name: "Vestido Niña Flower",
+        name: "Vestido Niña Azul Floral",
         category: "vestidos-nina",
-        price: 69.99,
-        description: "Vestido infantil con floral print. Volantes delicados y colores pastel. Telas suaves sin irritaciones. Ideal para primavera y verano.",
+        price: 18.99,
+        description: "Vestido infantil con floral print. Volantes delicados y colores pastel. Telas suaves sin irritaciones..",
         sizes: ["2-4", "4-6", "6-8", "8-10"],
-        badge: null,
-        emoji: "👧"
+        badge: "Oferta",
+        image: "assets/vestidos niña/vestido-niña2.jpg"
     },
     {
         id: 10,
-        name: "Vestido Niña Party",
+        name: "Vestido Niña Blanco Floral",
         category: "vestidos-nina",
-        price: 79.99,
-        description: "Vestido de fiesta infantil con purpurina. Brilla bajo la luz. Tela suave con forro cómodo. La favorita de las pequeñas.",
+        price: 30.00,
+        description: "Vestido infantil blanco con estampado floral. Diseño elegante con volantes y detalles delicados. Ideal para eventos especiales y sesiones de fotos.",
         sizes: ["2-4", "4-6", "6-8", "8-10"],
         badge: null,
-        emoji: "👧"
+        image: "assets/vestidos niña/vestido-niña3.jpg"
     },
     {
         id: 11,
-        name: "Conjunto Niña Summer",
+        name: "Conjunto Niña Lila",
         category: "vestidos-nina",
         price: 59.99,
-        description: "Conjunto verano con short y top. Tela ligera y transpirable. Ideal para días calurosos. Estilo y comodidad para las niñas.",
+        description: "Vestido lila con diseño elegante. Tela de alta calidad y corte ajustado. Ideal para ocasiones especiales.",
         sizes: ["2-4", "4-6", "6-8", "8-10"],
         badge: "Oferta",
-        emoji: "👧"
-    },
-    {
-        id: 12,
-        name: "Vestido Niña Cute",
-        category: "vestidos-nina",
-        price: 74.99,
-        description: "Vestido adorable con lacitos y colores suaves. Perfecto para fotografías y eventos especiales. Cómodo para jugar y brillar.",
-        sizes: ["2-4", "4-6", "6-8", "8-10"],
-        badge: null,
-        emoji: "👧"
+        image: "assets/vestidos niña/vestido-niña4.jpg"
     }
 ];
 
@@ -153,29 +150,33 @@ const contactForm = document.getElementById('contactForm');
 // =====================================================
 // NAVBAR SCROLL EFFECT
 // =====================================================
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-        navbar.classList.add('scrolled');
-    } else {
-        navbar.classList.remove('scrolled');
-    }
-});
+if (navbar) {
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
+}
 
 // =====================================================
 // MOBILE MENU
 // =====================================================
-navToggle.addEventListener('click', () => {
-    mobileMenu.classList.add('active');
-    overlay.classList.add('active');
-    document.body.style.overflow = 'hidden';
-});
+if (navToggle) {
+    navToggle.addEventListener('click', () => {
+        mobileMenu.classList.add('active');
+        overlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    });
+}
 
-mobileMenuClose.addEventListener('click', closeMobileMenu);
-overlay.addEventListener('click', closeMobileMenu);
+if (mobileMenuClose) mobileMenuClose.addEventListener('click', closeMobileMenu);
+if (overlay) overlay.addEventListener('click', closeMobileMenu);
 
 function closeMobileMenu() {
-    mobileMenu.classList.remove('active');
-    overlay.classList.remove('active');
+    if(mobileMenu) mobileMenu.classList.remove('active');
+    if(overlay) overlay.classList.remove('active');
     document.body.style.overflow = '';
 }
 
@@ -219,6 +220,7 @@ function navigateTo(page) {
 // RENDER PRODUCTS
 // =====================================================
 function renderFeaturedProducts() {
+    if (!featuredGrid) return;
     const featured = products.slice(0, 4);
     featuredGrid.innerHTML = featured.map(product => createProductCard(product)).join('');
     
@@ -231,6 +233,7 @@ function renderFeaturedProducts() {
 }
 
 function renderShopProducts(filter = 'all') {
+    if (!shopGrid) return;
     const filtered = filter === 'all' 
         ? products 
         : products.filter(p => p.category === filter);
@@ -258,7 +261,7 @@ function createProductCard(product) {
         <div class="product-card" data-id="${product.id}">
             ${badgeHTML}
             <div class="product-image">
-                <div class="product-image-placeholder">${product.emoji}</div>
+                <img src="${product.image}" alt="${product.name}" class="product-img-render">
             </div>
             <div class="product-info">
                 <h3 class="product-name">${product.name}</h3>
@@ -276,7 +279,7 @@ function openProductDetail(productId) {
     selectedProduct = products.find(p => p.id === productId);
     selectedSize = null;
     
-    if (!selectedProduct) return;
+    if (!selectedProduct || !productDetail) return;
     
     const sizesHTML = selectedProduct.sizes.map(size => 
         `<span class="product-detail-size" data-size="${size}">${size}</span>`
@@ -287,7 +290,7 @@ function openProductDetail(productId) {
     
     productDetail.innerHTML = `
         <div class="product-detail-image">
-            <div class="product-detail-emoji">${selectedProduct.emoji}</div>
+            <img src="${selectedProduct.image}" alt="${selectedProduct.name}" class="product-img-detail">
         </div>
         <div class="product-detail-info">
             <p class="product-detail-category">${categoryLabel}</p>
@@ -320,18 +323,24 @@ function openProductDetail(productId) {
         });
     });
     
-    document.getElementById('btnAddCart').addEventListener('click', () => {
-        if (!selectedSize) {
-            alert('Por favor selecciona una talla');
-            return;
-        }
-        addToCart(selectedProduct, selectedSize);
-    });
+    const btnAddCart = document.getElementById('btnAddCart');
+    if (btnAddCart) {
+        btnAddCart.addEventListener('click', () => {
+            if (!selectedSize) {
+                alert('Por favor selecciona una talla');
+                return;
+            }
+            addToCart(selectedProduct, selectedSize);
+        });
+    }
     
-    document.querySelector('.btn-back').addEventListener('click', (e) => {
-        e.preventDefault();
-        navigateTo('shop');
-    });
+    const btnBack = document.querySelector('.btn-back');
+    if (btnBack) {
+        btnBack.addEventListener('click', (e) => {
+            e.preventDefault();
+            navigateTo('shop');
+        });
+    }
     
     navigateTo('product');
     window.scrollTo(0, 0);
@@ -350,27 +359,26 @@ function addToCart(product, size) {
     cart.push(cartItem);
     updateCartUI();
     openCart();
-    
-    document.getElementById('cartSidebar').classList.add('active');
-    overlay.classList.add('active');
 }
 
 function updateCartUI() {
     const cartItemsEl = document.getElementById('cartItems');
     const cartTotal = document.getElementById('cartTotal');
     
+    if (!cartItemsEl) return;
+
     if (cart.length === 0) {
         cartItemsEl.innerHTML = '<p class="cart-empty">Tu carrito está vacío</p>';
-        cartTotal.textContent = '$0';
+        if (cartTotal) cartTotal.textContent = '$0';
         return;
     }
     
-    let total = 0;
+    let totalValue = 0;
     cartItemsEl.innerHTML = cart.map((item, index) => {
-        total += item.product.price;
+        totalValue += item.product.price;
         return `
             <div class="cart-item">
-                <div class="cart-item-emoji">${item.product.emoji}</div>
+                <img src="${item.product.image}" alt="${item.product.name}" class="cart-item-img">
                 <div class="cart-item-info">
                     <h4>${item.product.name}</h4>
                     <p>Talla: ${item.size}</p>
@@ -381,7 +389,7 @@ function updateCartUI() {
         `;
     }).join('');
     
-    cartTotal.textContent = `$${total.toFixed(2)}`;
+    if (cartTotal) cartTotal.textContent = `$${totalValue.toFixed(2)}`;
     
     document.querySelectorAll('.cart-item-remove').forEach(btn => {
         btn.addEventListener('click', () => {
@@ -393,16 +401,21 @@ function updateCartUI() {
 }
 
 function openCart() {
-    document.getElementById('cartSidebar').classList.add('active');
-    overlay.classList.add('active');
+    const sidebar = document.getElementById('cartSidebar');
+    if (sidebar) sidebar.classList.add('active');
+    if (overlay) overlay.classList.add('active');
     document.body.style.overflow = 'hidden';
 }
 
-document.getElementById('cartClose').addEventListener('click', () => {
-    document.getElementById('cartSidebar').classList.remove('active');
-    overlay.classList.remove('active');
-    document.body.style.overflow = '';
-});
+const cartCloseBtn = document.getElementById('cartClose');
+if (cartCloseBtn) {
+    cartCloseBtn.addEventListener('click', () => {
+        const sidebar = document.getElementById('cartSidebar');
+        if (sidebar) sidebar.classList.remove('active');
+        if (overlay) overlay.classList.remove('active');
+        document.body.style.overflow = '';
+    });
+}
 
 // =====================================================
 // FILTERS
@@ -447,68 +460,13 @@ document.querySelectorAll('.category-card').forEach(card => {
 // =====================================================
 // CONTACT FORM
 // =====================================================
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    
-    const formData = new FormData(contactForm);
-    const data = Object.fromEntries(formData);
-    
-    alert('¡Mensaje enviado! Nos pondremos en contacto contigo pronto.');
-    contactForm.reset();
-});
-
-// =====================================================
-// PRODUCT IMAGE PLACEHOLDER STYLE
-// =====================================================
-const style = document.createElement('style');
-style.textContent = `
-    .product-detail-emoji {
-        font-size: 150px;
-    }
-    
-    .cart-item {
-        display: flex;
-        align-items: center;
-        gap: 15px;
-        padding: 15px 0;
-        border-bottom: 1px solid var(--color-gray);
-    }
-    
-    .cart-item-emoji {
-        font-size: 40px;
-    }
-    
-    .cart-item-info {
-        flex: 1;
-    }
-    
-    .cart-item-info h4 {
-        font-size: 14px;
-        font-weight: 600;
-        margin-bottom: 5px;
-    }
-    
-    .cart-item-info p {
-        font-size: 12px;
-        color: var(--color-gray-medium);
-    }
-    
-    .cart-item-price {
-        font-weight: 700;
-        color: var(--color-pink) !important;
-    }
-    
-    .cart-item-remove {
-        font-size: 24px;
-        color: var(--color-gray-medium);
-        transition: var(--transition-base);
-    }
-    
-    .cart-item-remove:hover {
-        color: var(--color-red);
-    }
-`;
-document.head.appendChild(style);
+if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        alert('¡Mensaje enviado! Nos pondremos en contacto contigo pronto.');
+        contactForm.reset();
+    });
+}
 
 // =====================================================
 // INIT
@@ -517,7 +475,8 @@ function init() {
     renderFeaturedProducts();
     renderShopProducts();
     
-    document.querySelector('.nav-link[data-page="home"]').classList.add('active');
+    const homeLink = document.querySelector('.nav-link[data-page="home"]');
+    if (homeLink) homeLink.classList.add('active');
 }
 
 init();
