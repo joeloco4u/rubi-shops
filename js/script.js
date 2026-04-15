@@ -46,7 +46,7 @@ const products = [
         category: "vestidos-mujer",
         price: 30.00,
          // Enrutamiento para el ID 4
-        image: "assets/vestidos 30$/Vestido-negrocasual.jpeg", 
+        image: "assets/vestidos 30$/vestido-negrocasual.jpeg", 
         description: "Vestido negro casual con diseño elegante. Tela de alta calidad y corte ajustado. Ideal para ocasiones especiales.",
         sizes: ["XS"],
         
@@ -57,7 +57,7 @@ const products = [
         category: "vestidos-mujer",
         price: 30.00,
          // Enrutamiento para el ID 5
-        image: "assets/vestidos 30$/Vestido-negroelegante.jpeg", 
+        image: "assets/vestidos 30$/vestido-negroelegante.jpeg", 
         description: "Vestido negro elegante con diseño sofisticado. Tela de alta calidad y corte ajustado. Ideal para ocasiones especiales.",
         sizes: ["XS", "S", "M", "L"],
     
